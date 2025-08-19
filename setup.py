@@ -5,7 +5,7 @@ setup(
     version="0.0.3",
     author="Moritz Flaschel",
     author_email="moritz.flaschel@fau.de",
-    url="https://github.com/Material-Fingerprinting",
+    url="https://github.com/Material-Fingerprinting/material-fingerprinting",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     packages=find_packages(),
