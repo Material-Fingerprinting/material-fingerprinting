@@ -1,7 +1,7 @@
 __all__ = [
 
 "Database",
-"discover",
+"Discover",
 "Experiment",
 "ExperimentUnion",
 "Fingerprints",
@@ -11,7 +11,7 @@ __all__ = [
 ]
 
 from .Database import *
-from .discover import *
+from .Discover import *
 from .Experiment import *
 from .ExperimentUnion import *
 from .Fingerprints import *

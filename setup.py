@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="material_fingerprinting",
-    version="0.0.2",
+    name="material_fingerprinting_beta",
+    version="0.0.3",
     author="Moritz Flaschel",
     author_email="moritz.flaschel@fau.de",
     url="https://github.com/Material-Fingerprinting",
@@ -12,6 +12,7 @@ setup(
     package_data={
         "material_fingerprinting": ["databases/*.npz"],
     },
+    python_requires=">=3.10",
     install_requires=[
         "matplotlib",
         "numpy",
