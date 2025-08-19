@@ -20,7 +20,7 @@ pip install material-fingerprinting
 
 ## Example
 
-After installing Material Fingerprinting, run the following python script to test the installation:
+After installing Material Fingerprinting, run the following [python script](https://github.com/Material-Fingerprinting/material-fingerprinting/main/example_UTCSS.py) to test the installation:
 
 ```python
 import numpy as np  
