@@ -1,5 +1,7 @@
 ![Material Fingerprinting Logo](https://raw.githubusercontent.com/Material-Fingerprinting/material-fingerprinting-hyperelasticity/main/plots/logo.png)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16778796.svg)](https://doi.org/10.5281/zenodo.16778796)
+
 We propose [Material Fingerprinting](https://doi.org/10.48550/arXiv.2508.07831), a new method for the rapid discovery of mechanical material models from direct or indirect data that avoids solving potentially non-convex optimization problems. The core assumption of Material Fingerprinting is that each material exhibits a unique response when subjected to a standardized experimental setup. This response can be interpreted as the material's fingerprint, essentially a unique identifier that encodes all pertinent information about the material's mechanical characteristics. Consequently, if a database containing fingerprints and their corresponding mechanical models is established during an offline phase, an unseen material can be characterized rapidly in an online phase. This is accomplished by measuring its fingerprints and employing a pattern recognition algorithm to discover the best matching fingerprint in the database.
 
 ![Material Fingerprinting](https://raw.githubusercontent.com/Material-Fingerprinting/material-fingerprinting-hyperelasticity/main/plots/abstract.png)
@@ -16,6 +18,12 @@ This repository provides the actively maintained, [pip-installable package](http
 
 ```
 pip install material-fingerprinting
+```
+
+If you have already installed Material Fingerprinting and want to upgrade to the latest version, run the following:
+
+```
+pip install --upgrade --force-reinstall material-fingerprinting
 ```
 
 ## Example
@@ -49,20 +57,19 @@ In less than a second, Material Fingerprinting discovers the material model and 
 
 ## References
 
-```
-Moritz Flaschel, Denisa Martonová, Carina Veil, and Ellen Kuhl  
-Material Fingerprinting: A shortcut to material model discovery without solving optimization problems  
-2025  
-DOI: https://doi.org/10.48550/arXiv.2508.07831
-```
+1. Flaschel, Moritz; Martonová, Denisa; Veil, Carina; Kuhl, Ellen. *Material Fingerprinting: A shortcut to material model discovery without solving optimization problems*. arXiv preprint arXiv:2508.07831, 2025. DOI: [10.48550/arXiv.2508.07831](https://doi.org/10.48550/arXiv.2508.07831)
 
 ## How to cite the code
 
-```
-Moritz Flaschel, Denisa Martonová, Carina Veil, and Ellen Kuhl  
-Supplementary software for "Material Fingerprinting: A shortcut to material model discovery without solving optimization problems"  
-2025  
-DOI: http://doi.org/10.5281/zenodo.16778796
+```bibtex
+@software{flaschel2025materialfingerprintinghyperelasticity,
+  author       = {Flaschel, Moritz and Martonová, Denisa and Veil, Carina and Kuhl, Ellen},
+  title        = {Supplementary software for "Material Fingerprinting: A shortcut to material model discovery without solving optimization problems"},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.16778796},
+  url          = {https://github.com/Material-Fingerprinting/material-fingerprinting-hyperelasticity}
+}
 ```
 
 ## Release Notes
