@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="material_fingerprinting_beta",
-    version="0.0.3",
+    name="material_fingerprinting",
+    version="0.0.3", # only change this for a new release
     author="Moritz Flaschel",
     author_email="moritz.flaschel@fau.de",
     url="https://github.com/Material-Fingerprinting/material-fingerprinting",
