@@ -234,19 +234,19 @@ class Material():
         if format == "latex":
             # sorted in alphabetical order
             if self.name == "Blatz-Ko - incompressible":
-                W = f"${parameters[0]:.2f} [I_2 - 3] + p [J-1]$"
+                W = f"${parameters[0]:.2f} [I_2 - 3] - p [J-1]$"
             elif self.name == "Demiray - incompressible":
-                W = f"${parameters[0]:.2f} \\left[\\exp({parameters[1]:.2f} [I_1 - 3]) - 1\\right] + p [J-1]$"
+                W = f"${parameters[0]:.2f} \\left[\\exp({parameters[1]:.2f} [I_1 - 3]) - 1\\right] - p [J-1]$"
             elif self.name == "Gent - incompressible":
-                W = f"$- {parameters[0]:.2f} \\left[\\ln(1 - {parameters[1]:.2f} [I_1 - 3])\\right] + p [J-1]$"
+                W = f"$- {parameters[0]:.2f} \\left[\\ln(1 - {parameters[1]:.2f} [I_1 - 3])\\right] - p [J-1]$"
             elif self.name == "Holzapfel - incompressible":
-                W = f"${parameters[0]:.2f} \\left[\\exp({parameters[1]:.2f} [I_1 - 3]^2) - 1\\right] + p [J-1]$"
+                W = f"${parameters[0]:.2f} \\left[\\exp({parameters[1]:.2f} [I_1 - 3]^2) - 1\\right] - p [J-1]$"
             elif self.name == "Mooney-Rivlin - incompressible":
-                W = f"${parameters[0]:.2f} [I_1 - 3] + {parameters[1]:.2f} [I_2 - 3] + p [J-1]$"
+                W = f"${parameters[0]:.2f} [I_1 - 3] + {parameters[1]:.2f} [I_2 - 3] - p [J-1]$"
             elif self.name == "Neo-Hooke - incompressible":
-                W = f"${parameters[0]:.2f} [I_1 - 3] + p [J-1]$"
+                W = f"${parameters[0]:.2f} [I_1 - 3] - p [J-1]$"
             elif self.name == "Ogden - incompressible":
-                W = f"${parameters[0]:.2f} [\\lambda_1^" + "{" + f"{parameters[1]:.2f}" + "}" + f" + \\lambda_2^" + "{" + f"{parameters[1]:.2f}" + "}" + f" + \\lambda_3^" + "{" + f"{parameters[1]:.2f}" + "}" + f" - 3] + p [J-1]$"
+                W = f"${parameters[0]:.2f} [\\lambda_1^" + "{" + f"{parameters[1]:.2f}" + "}" + f" + \\lambda_2^" + "{" + f"{parameters[1]:.2f}" + "}" + f" + \\lambda_3^" + "{" + f"{parameters[1]:.2f}" + "}" + f" - 3] - p [J-1]$"
             else:
                 raise ValueError("The formula for this material is not implemented.")
         return W
