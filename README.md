@@ -1,6 +1,6 @@
 ![Material Fingerprinting Logo](https://raw.githubusercontent.com/Material-Fingerprinting/material-fingerprinting-hyperelasticity/main/plots/logo.png)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17098251.svg)](https://doi.org/10.5281/zenodo.17098251)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17098250.svg)](https://doi.org/10.5281/zenodo.17098250)
 
 We propose [Material Fingerprinting](https://doi.org/10.48550/arXiv.2508.07831), a new method for the rapid discovery of mechanical material models from direct or indirect data that avoids solving potentially non-convex optimization problems. The core assumption of Material Fingerprinting is that each material exhibits a unique response when subjected to a standardized experimental setup. This response can be interpreted as the material's fingerprint, essentially a unique identifier that encodes all pertinent information about the material's mechanical characteristics. Consequently, if a database containing fingerprints and their corresponding mechanical models is established during an offline phase, an unseen material can be characterized rapidly in an online phase. This is accomplished by measuring its fingerprints and employing a pattern recognition algorithm to discover the best matching fingerprint in the database.
 
@@ -14,7 +14,7 @@ At the core of Material Fingerprinting is a straightforward pattern recognition 
 
 ## Installation
 
-This repository provides the actively maintained, [pip-installable package](https://pypi.org/project/material-fingerprinting/) for Material Fingerprinting. The package requires Python version 3.10 or greater. To install the latest version, run the following in your python environment:
+This repository provides the actively maintained, [pip-installable package](https://pypi.org/project/material-fingerprinting/) for Material Fingerprinting. The package requires Python version 3.10 or greater. To install the latest version, run the following in your Python environment:
 
 ```
 pip install material-fingerprinting
@@ -28,7 +28,7 @@ pip install --upgrade --force-reinstall material-fingerprinting
 
 ## Example
 
-After installing Material Fingerprinting, run the following [python script](https://github.com/Material-Fingerprinting/material-fingerprinting/blob/main/example_UTCSS.py) to test the installation:
+After installing Material Fingerprinting, run the following [Python script](https://github.com/Material-Fingerprinting/material-fingerprinting/blob/main/example_UTCSS.py) to test the installation:
 
 ```python
 import numpy as np  
@@ -67,7 +67,7 @@ In less than a second, Material Fingerprinting discovers the material model and 
   title        = {Python package for Material Fingerprinting},
   year         = {2025},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.17098251},
+  doi          = {10.5281/zenodo.17098250},
   url          = {https://github.com/Material-Fingerprinting/material-fingerprinting}
 }
 ```
