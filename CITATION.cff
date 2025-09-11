@@ -1,0 +1,20 @@
+cff-version: 0.0.3
+version: v0.0.3
+date-released: 2025-09-11
+title: "Python package for Material Fingerprinting"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Flaschel"
+    given-names: "Moritz"
+    orcid: "https://orcid.org/0000-0002-1365-9272"
+  - family-names: "Denisa"
+    given-names: "Martonová"
+    orcid: "https://orcid.org/0000-0003-3977-8349"
+  - family-names: "Veil"
+    given-names: "Carina"
+    orcid: "https://orcid.org/0000-0002-6666-9212"
+  - family-names: "Kuhl"
+    given-names: "Ellen"
+    orcid: "https://orcid.org/0000-0002-6283-935X"
+doi: "10.5281/zenodo.17098251"
+url: "https://github.com/Material-Fingerprinting/material-fingerprinting"
