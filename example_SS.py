@@ -9,11 +9,7 @@ P12 = np.array([0.04000000020003427, 10.567894878723784, 21.117728784805728, 31.
 P12 += 10 * np.random.randn(*P12.shape)
 
 # prepare data for discovery
-measurement = {
-    "experiment": "SS", # simple shear
-    "F12": F12,
-    "P12": P12,
-}
+measurement = mf.Measurement("simple shear", F12, P12)
 
 # discover model with Material Fingerprinting
 mf.discover(measurement)

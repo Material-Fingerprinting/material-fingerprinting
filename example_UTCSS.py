@@ -12,15 +12,10 @@ P11 += 20 * np.random.randn(*P11.shape)
 P12 += 10 * np.random.randn(*P12.shape)
 
 # prepare data for discovery
-measurement = {
-    "experiment": "UTCSS", # uniaxial tension/compression and simple shear
-    "F11": F11,
-    "P11": P11,
-    "F12": F12,
-    "P12": P12,
-}
+measurement1 = mf.Measurement("uniaxial tension/compression", F11, P11)
+measurement2 = mf.Measurement("simple shear", F12, P12)
 
 # discover model with Material Fingerprinting
-mf.discover(measurement)
+mf.discover([measurement1, measurement2])
 
 

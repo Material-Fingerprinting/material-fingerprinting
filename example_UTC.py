@@ -9,11 +9,7 @@ P11 = np.array([-514.4903790087465, -432.4853727035757, -361.07919497406556, -29
 P11 += 20 * np.random.randn(*P11.shape)
 
 # prepare data for discovery
-measurement = {
-    "experiment": "UTC", # uniaxial tension/compression
-    "F11": F11,
-    "P11": P11,
-}
+measurement = mf.Measurement("uniaxial tension/compression", F11, P11)
 
 # discover model with Material Fingerprinting
 mf.discover(measurement)
