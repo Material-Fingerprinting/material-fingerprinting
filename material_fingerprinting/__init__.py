@@ -7,6 +7,7 @@ __all__ = [
 "Fingerprints",
 "Kinematics",
 "Material",
+"Measurement",
 
 ]
 
@@ -17,6 +18,7 @@ from .ExperimentUnion import *
 from .Fingerprints import *
 from .Kinematics import *
 from .Material import *
+from .Measurement import *
 
 
 

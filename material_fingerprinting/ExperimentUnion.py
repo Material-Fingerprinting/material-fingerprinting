@@ -15,7 +15,7 @@ import numpy as np
 class ExperimentUnion():
     """
     An object of this class is a union of multiple experiments, such as for example the combination
-    of uniaxial tension, uniaxial compression and simple shear.
+    of uniaxial tension/compression and simple shear.
     """
     
     def __init__(self,experiment_list):
