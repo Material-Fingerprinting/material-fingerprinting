@@ -71,5 +71,6 @@ In less than a second, Material Fingerprinting discovers the material model and 
 
 | Version | Changes |
 |---------|---------|
+| 0.1.3   | save data as pickle; added pure shear and equibiaxial tension/compression |
 | 0.0.3   | added pure uniaxial tension, compression and pure simple shear |
 | 0.0.2   | initial release for supervised Material Fingerprinting for uniaxial tension, compression and simple shear data |
