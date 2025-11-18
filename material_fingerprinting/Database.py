@@ -94,15 +94,15 @@ class Database():
         fingerprints = np.concatenate(self.fingerprints_list, axis=1)[:,mask]
         fingerprints_norms = np.linalg.norm(fingerprints, axis=1, keepdims=True)
         fingerprints_normalized = fingerprints / fingerprints_norms
-        paramters_normalized = self.parameters.copy()
+        parameters_normalized = self.parameters.copy()
         temp = self.parameters.copy() / fingerprints_norms
-        paramters_normalized[self.homogeneity_parameters] = temp[self.homogeneity_parameters]
+        parameters_normalized[self.homogeneity_parameters] = temp[self.homogeneity_parameters]
         correlations = fingerprints_normalized @ measurement_normalized
         id = np.argmax(correlations)
         material = Material(self.model_name_list[self.model_indices[id]])
-        parameters = paramters_normalized[id][~np.isnan(paramters_normalized[id])]
+        parameters = parameters_normalized[id][~np.isnan(parameters_normalized[id])]
         parameters = material.scale_parameters(parameters,measurement_norm)
-        return id, self.model_name_list[self.model_indices[id]], parameters
+        return id, self.model_name_list[self.model_indices[id]], parameters, correlations
     
     def save_npz(self,name,path=None):
         # Save the database to a .npz file.

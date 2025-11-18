@@ -23,7 +23,7 @@ from material_fingerprinting.Measurement import Measurement
 tab20blue = [31/255, 119/255, 180/255]
 tab20red = [214/255, 39/255, 40/255]
 
-def discover(measurement_list, database="HEI", verbose=True, plot=True):
+def discover(measurement_list, database="HEI", verbose=True, verbose_best_models=False, plot=True):
     if verbose:
         print("\n=== Material Fingerprinting ===")
         print("Contact moritz.flaschel@fau.de for help and bug reports.\n")
@@ -75,7 +75,7 @@ def discover(measurement_list, database="HEI", verbose=True, plot=True):
             f = np.append(f,np.zeros(db.fingerprints_list[i].shape[1]))
 
     # Material Fingerprinting
-    id, model_disc, parameters_disc = db.discover(f)
+    id, model_disc, parameters_disc, correlations = db.discover(f)
 
     # Compute R² values
     r2_results = compute_r2(measurement_list, model_disc, parameters_disc)
@@ -91,6 +91,24 @@ def discover(measurement_list, database="HEI", verbose=True, plot=True):
         for exp_name, r2 in r2_results["R2_per_experiment"].items():
             print(f"        {exp_name}: {r2:.4f}")
         print(f"    R² average over all experiments: {r2_results["R2_average"]:.4f}")
+
+    # Print best models if requested
+    if verbose and verbose_best_models:
+        sorted_indices = np.argsort(correlations)[::-1]
+        unique_models = []
+        unique_parameters = []
+        unique_correlations = []
+        for idx in sorted_indices:
+            model_name = db.model_name_list[db.model_indices[idx]]
+            if model_name not in unique_models:
+                unique_models.append(model_name)
+                unique_parameters.append(parameters_disc)
+                unique_correlations.append(correlations[idx])
+
+        print("\n    best models in the database:")
+        for i, (model_name, corr) in enumerate(zip(unique_models, unique_correlations)):
+            print(f"        {i+1}. model: {model_name}, cosine similarity: {corr:.4f}")
+
 
     # Plot if requested
     if plot:
