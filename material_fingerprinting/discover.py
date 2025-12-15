@@ -90,7 +90,7 @@ def discover(measurement_list, database="HEI", verbose=True, verbose_best_models
         print("    R² values per experiment:")
         for exp_name, r2 in r2_results["R2_per_experiment"].items():
             print(f"        {exp_name}: {r2:.4f}")
-        print(f"    R² average over all experiments: {r2_results["R2_average"]:.4f}")
+        print(f"    R² average over all experiments: {r2_results['R2_average']:.4f}")
 
     # Print best models if requested
     if verbose and verbose_best_models:
