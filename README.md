@@ -52,9 +52,9 @@ In less than a second, Material Fingerprinting discovers the material model and 
 
 ## References
 
-1. Flaschel, Moritz; Martonová, Denisa; Veil, Carina; Kuhl, Ellen. *Material Fingerprinting: A shortcut to material model discovery without solving optimization problems*. arXiv preprint arXiv:2508.07831, 2025. DOI: [10.48550/arXiv.2508.07831](https://doi.org/10.48550/arXiv.2508.07831)
+1. Flaschel, Moritz; Martonová, Denisa; Veil, Carina; Kuhl, Ellen. *Material Fingerprinting: A shortcut to material model discovery without solving optimization problems*. Computer Methods in Applied Mechanics and Engineering, 2026. DOI: [10.1016/j.cma.2025.118573](http://doi.org/10.1016/j.cma.2025.118573)
 
-2. Martonová, Denisa; Kuhl, Ellen; Flaschel, Moritz. *Material Fingerprinting for rapid discovery of hyperelastic models: First experimental validation*. Available at SSRN, 2025. DOI: [10.2139/ssrn.5517672](http://dx.doi.org/10.2139/ssrn.5517672)
+2. Martonová, Denisa; Kuhl, Ellen; Flaschel, Moritz. *Material Fingerprinting for rapid discovery of hyperelastic models: First experimental validation*. Journal of the Mechanics and Physics of Solids, 2026. DOI: [10.1016/j.jmps.2025.106463](http://doi.org/10.1016/j.jmps.2025.106463)
 
 ## How to cite the code
 
