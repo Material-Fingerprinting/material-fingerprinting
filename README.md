@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17098250.svg)](https://doi.org/10.5281/zenodo.17098250)
 
-We propose [Material Fingerprinting](https://doi.org/10.48550/arXiv.2508.07831), a new method for the rapid discovery of mechanical material models from direct or indirect data that avoids solving potentially non-convex optimization problems. The core assumption of Material Fingerprinting is that each material exhibits a unique response when subjected to a standardized experimental setup. This response can be interpreted as the material's fingerprint, essentially a unique identifier that encodes all pertinent information about the material's mechanical characteristics. Consequently, if a database containing fingerprints and their corresponding mechanical models is established during an offline phase, an unseen material can be characterized rapidly in an online phase. This is accomplished by measuring its fingerprints and employing a pattern recognition algorithm to discover the best matching fingerprint in the database.
+We propose [Material Fingerprinting](https://linkinghub.elsevier.com/retrieve/pii/S004578252500845X), a new method for the rapid discovery of mechanical material models from direct or indirect data that avoids solving potentially non-convex optimization problems. The core assumption of Material Fingerprinting is that each material exhibits a unique response when subjected to a standardized experimental setup. This response can be interpreted as the material's fingerprint, essentially a unique identifier that encodes all pertinent information about the material's mechanical characteristics. Consequently, if a database containing fingerprints and their corresponding mechanical models is established during an offline phase, an unseen material can be characterized rapidly in an online phase. This is accomplished by measuring its fingerprints and employing a pattern recognition algorithm to discover the best matching fingerprint in the database.
 
 ![Material Fingerprinting](https://raw.githubusercontent.com/Material-Fingerprinting/material-fingerprinting-hyperelasticity/main/plots/abstract.png)
 
@@ -55,6 +55,8 @@ In less than a second, Material Fingerprinting discovers the material model and 
 1. Flaschel, Moritz; Martonová, Denisa; Veil, Carina; Kuhl, Ellen. *Material Fingerprinting: A shortcut to material model discovery without solving optimization problems*. Computer Methods in Applied Mechanics and Engineering, 2026. DOI: [10.1016/j.cma.2025.118573](http://doi.org/10.1016/j.cma.2025.118573)
 
 2. Martonová, Denisa; Kuhl, Ellen; Flaschel, Moritz. *Material Fingerprinting for rapid discovery of hyperelastic models: First experimental validation*. Journal of the Mechanics and Physics of Solids, 2026. DOI: [10.1016/j.jmps.2025.106463](http://doi.org/10.1016/j.jmps.2025.106463)
+
+3. Flaschel, Moritz; Moreno-Mateos, Miguel Angel; Wiesheier, Simon; Steinmann, Paul; Kuhl, Ellen. *Unsupervised Material Fingerprinting: Ultra-fast hyperelastic model discovery from full-field experimental measurements*. Preprint, 2026. DOI: [10.48550/arXiv.2601.14965](http://doi.org/10.48550/arXiv.2601.14965)
 
 ## How to cite the code
 
