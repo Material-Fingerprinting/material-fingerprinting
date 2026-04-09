@@ -50,6 +50,8 @@ mf.discover([measurement1, measurement2])
 
 In less than a second, Material Fingerprinting discovers the material model and plots its response alongside the provided data.
 
+![Example](/media/readme/example_UTCSS.png)
+
 ## References
 
 1. Flaschel, Moritz; Martonová, Denisa; Veil, Carina; Kuhl, Ellen. *Material Fingerprinting: A shortcut to material model discovery without solving optimization problems*. Computer Methods in Applied Mechanics and Engineering, 2026. DOI: [10.1016/j.cma.2025.118573](http://doi.org/10.1016/j.cma.2025.118573)
@@ -57,6 +59,8 @@ In less than a second, Material Fingerprinting discovers the material model and 
 2. Martonová, Denisa; Kuhl, Ellen; Flaschel, Moritz. *Material Fingerprinting for rapid discovery of hyperelastic models: First experimental validation*. Journal of the Mechanics and Physics of Solids, 2026. DOI: [10.1016/j.jmps.2025.106463](http://doi.org/10.1016/j.jmps.2025.106463)
 
 3. Flaschel, Moritz; Moreno-Mateos, Miguel Angel; Wiesheier, Simon; Steinmann, Paul; Kuhl, Ellen. *Unsupervised Material Fingerprinting: Ultra-fast hyperelastic model discovery from full-field experimental measurements*. Preprint, 2026. DOI: [10.48550/arXiv.2601.14965](http://doi.org/10.48550/arXiv.2601.14965)
+
+4. Flaschel, Moritz; Holthusen, Hagen; Martonová, Denisa; Kuhl, Ellen. *Adaptive Material Fingerprinting for the fast discovery of polyconvex feature combinations in isotropic and anisotropic hyperelasticity*. Preprint, 2026. DOI: [10.48550/arXiv.2604.05698](http://doi.org/10.48550/arXiv.2604.05698)
 
 ## How to cite the code
 
